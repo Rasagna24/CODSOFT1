@@ -1,0 +1,237 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Set font color to white */
+    background-color: #000; /* Set background color to black */
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff; /* White font color */
+    padding: 1rem 0;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space evenly between logo and nav */
+    border: 2px solid #fff; /* White border */
+    border-radius: 25px; /* Curvy rectangular border */
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 0.5rem;
+    border-radius: 50%; /* Ellipsed shape for the logo */
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* White font color */
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.profile-image {
+    max-width: 40px;
+    border-radius: 50%; /* Ellipsed shape for profile image */
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    padding: 2rem 0;
+    border-radius: 10px; /* Rounded corners */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff; /* White font color */
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
+}
+
+/* Home section styles */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.home-text h2 {
+    font-size: 2rem;
+    font-weight: bold ;
+    color: #fff; /* White font color */
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    color: #fff; /* White font color */
+    margin-bottom: 1rem;
+}
+
+.home-text .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #fff; /* White background */
+    color: #000; /* Black font color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 1rem; /* Adjusted for positioning */
+}
+
+.home-text .btn:hover {
+    background: #555; /* Darker gray on hover */
+    color: #fff; /* White font color on hover */
+}
+
+.home-image {
+    flex: 1;
+    padding: 1rem;
+    text-align: right;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: add some border-radius for aesthetics */
+}
+
+/* Dishes section styles */
+.dishes-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.dishes-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.dish {
+    flex: 0 1 calc(33.33% - 1rem); /* Ensure the dishes take up about a third of the container width */
+    margin: 0.5rem; /* Add some horizontal margin for spacing */
+    text-align: center;
+}
+
+.dish img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dish h3.dish-name {
+    margin-top: 0.5rem;
+    color: #fff; /* White font color */
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+.dish p.dish-description {
+    margin-top: 0.5rem;
+    color: #fff; /* White font color */
+}
+
+/* About section styles */
+#about {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark gray background */
+}
+
+/* Services section styles */
+#services {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark gray background */
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark gray background */
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 0 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff; /* White font color */
+}
+
+/* Contact section styles */
+#contact {
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+}
+
+/* Footer styles */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff; /* White font color */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
